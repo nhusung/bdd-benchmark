@@ -88,11 +88,11 @@ public:
     _relprev_vars = bot();
   }
 
-  template <typename F>
   int
-  run(const F& f)
+  run(std::function<int()> f)
   {
-    return f();
+    int res = _manager.run_in_worker_pool(std::move(f));
+    return res;
   }
 
   // BDD Operations
@@ -422,11 +422,10 @@ public:
     _relprev_vars = bot();
   }
 
-  template <typename F>
   int
-  run(const F& f)
+  run(std::function<int()> f)
   {
-    return f();
+    return _manager.run_in_worker_pool(std::move(f));
   }
 
   // BDD Operations
@@ -738,11 +737,10 @@ public:
     }
   }
 
-  template <typename F>
   int
-  run(const F& f)
+  run(std::function<int()> f)
   {
-    return f();
+    return _manager.run_in_worker_pool(std::move(f));
   }
 
   // ZDD Operations
