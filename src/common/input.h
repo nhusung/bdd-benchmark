@@ -6,7 +6,6 @@
 #include <getopt.h>  // getopt
 #include <stdexcept> // std::invalid_argument
 #include <string>    // std::string, std::stoi, ...
-#include <vector>    // std::vector
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -183,9 +182,9 @@ parse_input(int argc, char** argv)
         std::cout
           << Policy::name << " Benchmark\n"
           << "-------------------------------------------------------------------------------\n"
-          << "Usage:  -flag      [default] Description\n"
+          << "Usage:  -flag       [default] Description\n"
           << "-------------------------------------------------------------------------------\n"
-          << "        -h                   Print this information\n"
+          << "        -h                    Print this information\n"
           << "\n"
           << "-------------------------------------------------------------------------------\n"
           << "BDD Package options:\n"
