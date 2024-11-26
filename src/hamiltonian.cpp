@@ -5,6 +5,7 @@
 #include <array>
 #include <sstream>
 #include <string>
+#include <vector>
 
 // Math, e.g. absolute and minimum value
 #include <cmath>
