@@ -14,7 +14,7 @@
 // Files, Streams, and so on...
 #include <filesystem>
 #include <fstream>
-#include <ostream>
+#include <iostream>
 
 // Types
 #include <cstdint>
@@ -293,7 +293,7 @@ namespace lib_bdd
   };
 
   /// \brief Extract statistics from a BDD.
-  stats_t
+  inline stats_t
   stats(const bdd& f)
   {
     stats_t out;
@@ -348,7 +348,7 @@ namespace lib_bdd
     return out;
   }
 
-  void
+  inline void
   print_json(const stats_t& stats, std::ostream& = std::cout)
   {
     std::cout << json::field("size") << json::value(stats.size) << json::comma << json::endl;
@@ -391,16 +391,14 @@ namespace lib_bdd
   using var_map = std::unordered_map<lib_bdd::node::var_type, int>;
 
   /// \brief Derive a compacted remapping of the variable ordering.
-  var_map
+  inline var_map
   remap_vars(const std::vector<lib_bdd::bdd>& fs)
   {
     // Minimum Priority Queue
     std::priority_queue<int, std::vector<int>, std::greater<>> pq;
 
     for (const lib_bdd::bdd& f : fs) {
-      for (size_t i = 2; i < f.size(); ++i) {
-        pq.push(f.at(i).level());
-      }
+      for (size_t i = 2; i < f.size(); ++i) { pq.push(f.at(i).level()); }
     }
 
     std::unordered_map<lib_bdd::node::var_type, int> out;
@@ -454,7 +452,7 @@ namespace lib_bdd
 
     for (auto iter = work_order.begin(); iter != work_order.end(); ++iter) {
       const lib_bdd::node& n = in.at(*iter);
-      const auto var = vm.find(n.level());
+      const auto var         = vm.find(n.level());
 
       if (var == vm.end()) {
         std::stringstream ss;
