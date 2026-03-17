@@ -6,8 +6,9 @@
 #include <string>
 #include <string_view>
 #include <vector>
+#include <iostream>
 
-#include "../common/adapter.h"
+#include "../common/input.h"
 
 #include "lib-bdd.h"
 

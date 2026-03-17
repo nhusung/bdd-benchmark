@@ -1,6 +1,6 @@
 set(COMMON_HEADERS
-  adapter.h
   array.h
+  benchmark.h
   chrono.h
   input.h
   json.h

@@ -7,7 +7,7 @@
 #include <string>
 #include <string_view>
 
-#include "../common/adapter.h"
+#include "../common/input.h"
 
 #include <bdd.h>
 

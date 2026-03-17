@@ -5,10 +5,8 @@
 #include <string>
 #include <vector>
 
-// Other
-#include <stdexcept>
 
-#include "common/adapter.h"
+#include "common/benchmark.h"
 #include "common/chrono.h"
 #include "common/input.h"
 #include "common/libbdd_parser.h"

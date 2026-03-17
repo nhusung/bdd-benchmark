@@ -2,13 +2,12 @@
 #include <cassert>
 
 // Data Structures
-#include <sstream>
 #include <string>
 
 // Types
 #include <cstdlib>
 
-#include "common/adapter.h"
+#include "common/benchmark.h"
 #include "common/array.h"
 #include "common/chrono.h"
 #include "common/input.h"

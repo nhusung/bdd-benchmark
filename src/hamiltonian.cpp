@@ -3,7 +3,6 @@
 
 // Data Structures
 #include <array>
-#include <sstream>
 #include <string>
 #include <vector>
 
@@ -19,7 +18,7 @@
 // Other
 #include <utility>
 
-#include "common/adapter.h"
+#include "common/benchmark.h"
 #include "common/array.h"
 #include "common/chrono.h"
 #include "common/input.h"

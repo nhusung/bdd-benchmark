@@ -4,7 +4,7 @@
 #include <string>
 #include <string_view>
 
-#include "../common/adapter.h"
+#include "../common/benchmark.h"
 
 #include <sylvan.h>
 #include <sylvan_table.h>

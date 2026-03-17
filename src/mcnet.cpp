@@ -18,14 +18,11 @@
 // Files
 #include <filesystem>
 #include <fstream>
-#include <istream>
 
 // Types
 #include <cstdlib>
-#include <type_traits>
 
 // Other
-#include <functional>
 #include <random>
 #include <stdexcept>
 #include <utility>
@@ -34,7 +31,7 @@
 #include <pugixml.hpp>
 
 // Common
-#include "common/adapter.h"
+#include "common/benchmark.h"
 #include "common/chrono.h"
 #include "common/input.h"
 

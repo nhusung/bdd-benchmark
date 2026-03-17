@@ -31,7 +31,7 @@
 #include <stdexcept>
 #include <utility>
 
-#include "common/adapter.h"
+#include "common/benchmark.h"
 #include "common/chrono.h"
 #include "common/input.h"
 

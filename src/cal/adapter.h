@@ -8,7 +8,7 @@
 #include <string_view>
 #include <vector>
 
-#include "common/adapter.h"
+#include "../common/input.h"
 
 #include <calObj.hh>
 
